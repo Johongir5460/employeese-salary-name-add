@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ishchilarni Ro'yxatga Olish</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <!--  -->
+    <div class="container">
+      <h1>Ishchilarni Ro'yxatga Olish</h1>
+      <form
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+        "
+        id="employeeForm"
+      >
+        <label for="name">Ism:</label>
+        <input
+          style="
+            padding: 7px;
+            border-radius: 7px;
+            border: none;
+            outline: rgb(81, 81, 221);
+            text-indent: 10px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+            transition: 1s;
+            margin: 20px;
+          "
+          type="text"
+          id="name"
+          name="name"
+          required
+        />
+        <br />
+        <label for="salary">Maosh:</label>
+        <input
+          style="
+            padding: 7px;
+            border-radius: 7px;
+            border: none;
+            outline: rgb(81, 81, 221);
+            text-indent: 10px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+            transition: 1s;
+          "
+          type="text"
+          id="salary"
+          name="salary"
+          required
+        />
+        <br />
+        <button
+          style="
+            padding: 10px 20px;
+            background-color: rgb(146, 227, 227);
+            border: none;
+            border-radius: 7px;
+          "
+          type="submit"
+        >
+          Qo'shish
+        </button>
+      </form>
+      <h2>Ishchilar Ro'yxati:</h2>
+      <ul id="employeeList"></ul>
+    </div>
+    <div id="cursor"></div>
+    <script src="./script/app.js"></script>
+  </body>
+</html>
